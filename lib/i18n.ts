@@ -1,0 +1,55 @@
+export type Lang = "en" | "es" | "ru"
+
+export const LANGS: { code: Lang; label: string }[] = [
+  { code: "en", label: "EN" },
+  { code: "es", label: "ES" },
+  { code: "ru", label: "RU" },
+]
+
+export const translations = {
+  en: {
+    htmlLang: "en",
+    tagline: "Private household & errands",
+    eyebrow: "Launching soon",
+    heading: "Something refined is on its way",
+    body: "We are putting the finishing touches on a discreet, dependable service for your home and daily errands. Leave your email and be the first to know when we open.",
+    emailLabel: "Email address",
+    emailPlaceholder: "your@email.com",
+    button: "Notify me at launch",
+    submitting: "Sending…",
+    success: "Thank you! We'll let you know about the launch.",
+    invalid: "Please enter a valid email address.",
+    error: "Something went wrong. Please try again.",
+    rights: "All rights reserved.",
+  },
+  es: {
+    htmlLang: "es",
+    tagline: "Hogar privado y encargos",
+    eyebrow: "Muy pronto",
+    heading: "Algo refinado está en camino",
+    body: "Estamos dando los últimos toques a un servicio discreto y fiable para tu hogar y tus encargos diarios. Deja tu correo y sé el primero en saber cuándo abrimos.",
+    emailLabel: "Correo electrónico",
+    emailPlaceholder: "tu@correo.com",
+    button: "Avísame en el lanzamiento",
+    submitting: "Enviando…",
+    success: "¡Gracias! Te avisaremos sobre el lanzamiento.",
+    invalid: "Introduce un correo electrónico válido.",
+    error: "Algo salió mal. Inténtalo de nuevo.",
+    rights: "Todos los derechos reservados.",
+  },
+  ru: {
+    htmlLang: "ru",
+    tagline: "Ведение дома и быта",
+    eyebrow: "Скоро запуск",
+    heading: "Скоро мы откроем что-то особенное",
+    body: "Мы завершаем работу над деликатным и надёжным сервисом для вашего дома и повседневных поручений. Оставьте email — и вы узнаете о запуске первыми.",
+    emailLabel: "Электронная почта",
+    emailPlaceholder: "your@email.com",
+    button: "Уведомить о запуске",
+    submitting: "Отправляем…",
+    success: "Спасибо! Мы сообщим вам о запуске.",
+    invalid: "Пожалуйста, введите корректный email.",
+    error: "Что-то пошло не так. Попробуйте ещё раз.",
+    rights: "Все права защищены.",
+  },
+} as const
